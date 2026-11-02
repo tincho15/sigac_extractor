@@ -31,6 +31,16 @@ python -m uvicorn app.main:app --reload
 
 La API estará disponible en <http://127.0.0.1:8000>. La documentación interactiva se encuentra en <http://127.0.0.1:8000/docs>.
 
+## Ejecutar con Docker
+
+Con Docker Engine y Docker Compose instalados, desde la raíz del proyecto ejecuta:
+
+```bash
+docker compose up --build
+```
+
+La API estará disponible en <http://localhost:8000> y su documentación en <http://localhost:8000/docs>. Para detenerla, pulsa `Ctrl+C`; también puedes ejecutar `docker compose down` en otra terminal.
+
 ## Health check
 
 ```text
